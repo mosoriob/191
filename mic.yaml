@@ -1,0 +1,26 @@
+step: 1
+name: '191'
+docker_image: 191:latest
+inputs:
+  files_zip:
+    path: files.zip
+    format: zip
+code_files:
+  start_sh:
+    path: start.sh
+    format: sh
+outputs:
+  b_txt:
+    path: outputs/b.txt
+    format: txt
+  a_txt:
+    path: outputs/a.txt
+    format: txt
+commands: '
+
+
+  pushd .
+
+  bash start.sh
+
+  popd'
